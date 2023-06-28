@@ -1,0 +1,50 @@
+#projects{
+    .projects_content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .project{
+            padding: 30px 15px;
+            width: 32%;
+            margin: 10px 0;
+            box-shadow: 0 4px 10px #ccccccc7;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            &:hover{
+                .icon{
+                    background: #fff;
+                    svg{
+                        color: #149ddd;
+                    }
+                }
+            }
+
+            color: #222;
+            a{
+                h4{
+                    padding: 20px 0;
+                }
+            }
+            .icon{
+                transition: all .3s linear;
+                background: #149ddd;
+                display: inline-block;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg{
+                    transition: all .3s linear;
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

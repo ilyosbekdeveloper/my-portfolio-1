@@ -1,0 +1,52 @@
+.about{
+    .about_section_content{
+        display: flex;
+        align-items: flex-start;
+        .about_section_content_img{
+            width: 40%;
+        }
+        .about_me_section{
+            width: 70%;
+            padding: 0 20px;
+            .about_me_section_title{
+                font-weight: 600;
+                font-size: 26px;
+                color: #173b6c;
+            }
+            .about_me_section_description{
+                font-style: italic !important;
+                margin-bottom: 1rem;
+            }
+
+            .about_me_datas{
+                display: flex;
+                align-items: center;
+                ul{
+                    &:nth-child(1){
+                        margin-right: 70px;
+                    }
+                    li{
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                       svg{
+                        color: #159ddd;
+                        font-weight: 100;
+                        margin-right: 15px;
+                       }
+                       strong{
+                        color: #000;
+                        margin-right: 10px;
+                       } 
+                       span{
+                        color: #272829;
+                       }
+                    }
+                }
+            }
+            .about_section_par{
+                font-size: 1rem;
+            }
+        }
+    }
+}

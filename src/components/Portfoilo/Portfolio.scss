@@ -1,0 +1,93 @@
+#portfolio{
+    background: #f5f8fd;
+
+    .portfolio_content{
+        .portfolio_btns{
+            display: inline-block;
+            padding: 0;
+            margin: 30px auto 35px auto;
+            list-style: none;
+            text-align: center;
+            background: #fff;
+            border-radius: 50px;
+            padding: 2px 15px;
+
+            .portfolio_btn{
+                cursor: pointer;
+                display: inline-block;
+                padding: 10px 15px 8px 15px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1;
+                text-transform: uppercase;
+                color: #272829;
+                margin-bottom: 5px;
+                transition: all 0.3s ease-in-out;
+
+                &.active{
+                    color: #149ddd;
+                }
+            }
+        }
+
+        // products
+        .products_section{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .product{
+                width: 370px;
+                height: 277px;
+                overflow: hidden;
+                position: relative;
+                margin: 10px 0;
+                &:hover{
+                    &::after{
+                        background: #ffffff75;
+                    }
+                    .product_links{
+                        bottom: 0;
+                    }
+                }
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                    background: #ffffff00;
+                    transition: all ease-in-out 0.3s;
+                }
+
+                .product_links{
+                    opacity: 1;
+                    left: 0;
+                    right: 0;
+                    bottom: -60px;
+                    z-index: 3;
+                    position: absolute;
+                    transition: all ease-in-out 0.3s;
+                    display: flex;
+                    justify-content: center;
+
+                    .product_link{
+                        color: #fff;
+                        font-size: 28px;
+                        text-align: center;
+                        background: rgba(20, 157, 221, 0.75);
+                        transition: 0.3s;
+                        width: 50%;
+                        cursor: pointer;
+                        &:hover{
+                            background: #149dddda;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

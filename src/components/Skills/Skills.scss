@@ -1,0 +1,72 @@
+#skills{
+    background: #f5f8fd;
+
+    .skills_content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .skill{
+            width: 49%;
+            margin-top: 17px;
+
+            // skills
+            &.skill_1{
+                .skill_percentage::after{
+                    width: 100%;
+                }
+            }
+            &.skill_2{
+                .skill_percentage::after{
+                    width: 80%;
+                }
+            }
+            &.skill_3{
+                .skill_percentage::after{
+                    width: 80%;
+                }
+            }
+            &.skill_4{
+                .skill_percentage::after{
+                    width: 80%;
+                }
+            }
+            &.skill_5{
+                .skill_percentage::after{
+                    width: 70%;
+                }
+            }
+            &.skill_6{
+                .skill_percentage::after{
+                    width: 55%;
+                }
+            }
+
+            .skill_title{
+                padding: 0;
+                margin: 0 0 6px 0;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-family: "Poppins", sans-serif;
+                color: #050d18;
+                font-size: 13px;
+            }
+
+            // styles width skills
+            .skill_percentage{
+                width: 100%;
+                height: 10px;
+                background: #dce8f8;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background: #149ddd;
+                    left: 0;
+                    top: 0;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

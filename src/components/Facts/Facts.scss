@@ -1,0 +1,48 @@
+#facts{
+    .facts_content{
+        padding-top: 30px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .facts_box{
+            align-items: flex-start;
+            svg{
+                color: #159ddd;
+                display: block;
+                font-size: 44px;
+                line-height: 0;
+            }
+            .count_dec{
+                margin-left: 17px;
+                text-align: left;
+
+                .count{
+                    font-size: 48px;
+                    line-height: 40px;
+                    display: block;
+                    font-weight: 700;
+                    color: #050d18;
+                    padding-bottom: 10px;
+                }
+                .facts_box_par{
+                    width: 200px;
+                    strong{
+                        font-family: "Raleway", sans-serif;
+                        font-size: 14px;
+                        color: #122f57;
+                        // display: block;
+                    }
+                    span{
+                        padding: 15px 0 0 0;
+                        font-family: "Raleway", sans-serif;
+                        font-size: 14px;
+                        color: #122f57;
+                    }
+                }
+            }
+        }
+    }
+}
